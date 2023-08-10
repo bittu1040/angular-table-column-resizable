@@ -1,0 +1,26 @@
+table {
+    width: 100%;
+  }
+  th {
+    position: relative;
+    pointer-events: none;
+  }
+  
+  th::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 6px;
+    cursor: col-resize;
+    background-color: transparent;
+    /* border-right: 1px solid grey; */
+    /* background: linear-gradient(to right, rgba(0, 0, 0, 0.1), transparent); */
+    z-index: 1;
+    pointer-events: auto;
+  }
+
+  th,td{
+    border-left: 1px solid grey;
+  }
